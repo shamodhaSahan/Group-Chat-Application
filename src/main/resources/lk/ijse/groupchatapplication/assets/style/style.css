@@ -1,0 +1,29 @@
+.msgBox {
+    -fx-background-color: #455a64;
+    -fx-background-radius: 70;
+    -fx-font-size: 15px;
+    -fx-text-fill: #eeeeee;
+    -fx-font-family: Arial !important;
+}
+.left-pane{
+    -fx-background-color: #B0D8DA;
+    -fx-background-radius: 36px 0 0 36px;
+    -fx-border-radius: 36px 0 0 36px;
+}
+.right-pane{
+    -fx-background-color: #fff;
+    -fx-background-radius: 36px 0 0 36px;
+}
+.chat-pane{
+    -fx-background-color:  linear-gradient(to right, #5f89b4, #394183);
+    -fx-background-radius: 5%;
+}
+.chat-area{
+    -fx-background: linear-gradient(to right, #709fd0, #454e96);
+    -fx-background-color: linear-gradient(to right, #709fd0, #454e96);
+    -fx-border-color: linear-gradient(to right, #709fd0, #454e96) ;
+}
+.btn-chat{
+    -fx-background-color: #2c336c;
+    -fx-background-radius: 50%;
+}

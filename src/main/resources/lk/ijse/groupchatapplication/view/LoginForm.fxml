@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: B0D8DA;" styleClass="left-pane" stylesheets="@../assets/style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.groupchatapplication.controller.LoginFormController">
+   <AnchorPane layoutX="110.0" layoutY="5.0" prefHeight="341.0" prefWidth="260.0" styleClass="right-pane" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+      <children>
+         <JFXButton layoutX="101.0" layoutY="210.0" onAction="#loginOnAction" prefHeight="42.0" prefWidth="168.0" ripplerFill="#838586" style="-fx-background-color: #3498db; -fx-background-radius: 30;" text="LOG IN" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </JFXButton>
+         <HBox alignment="CENTER" layoutY="150.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+               <FontAwesomeIconView fill="#3498db" glyphName="USER" size="30" />
+               <JFXTextField fx:id="txtUserName" labelFloat="true" prefHeight="31.0" prefWidth="217.0" promptText="username" unFocusColor="#3498db">
+                  <focusColor>
+                     <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                        <stops>
+                           <Stop color="BLACK" />
+                           <Stop color="WHITE" offset="1.0" />
+                        </stops>
+                     </RadialGradient>
+                  </focusColor>
+               </JFXTextField>
+            </children>
+            <padding>
+               <Insets left="20.0" right="20.0" />
+            </padding>
+         </HBox>
+         <FontAwesomeIconView fill="RED" glyphName="CLOSE" layoutX="204.0" layoutY="36.0" onMouseClicked="#closeOnAction" size="20" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="5.0" />
+         <FontAwesomeIconView glyphName="MINUS" layoutX="210.0" layoutY="21.0" onMouseClicked="#minimizeOnAction" size="20" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="7.0" />
+      </children>
+   </AnchorPane>
+   <Text layoutX="55.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+      <font>
+         <Font name="System Bold Italic" size="36.0" />
+      </font>
+   </Text>
+</AnchorPane>
